@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/purple_200"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Withpet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="반려동물 입력"
+                android:fontFamily="@font/nanumbarunpenb"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_pKinds"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:drawableStart="@drawable/ic_baseline_content_paste_24"
+                android:drawableLeft="@drawable/ic_baseline_content_paste_24"
+                android:fontFamily="@font/nanumbarunpenb"
+                android:hint="종류"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black">
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/et_pAge"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_baseline_content_paste_24"
+                android:drawableLeft="@drawable/ic_baseline_content_paste_24"
+                android:fontFamily="@font/nanumbarunpenb"
+                android:hint="나이"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/nanumbarunpenb"
+                android:text="성별"
+                android:textColor="@color/black"
+                android:textSize="20dp">
+
+            </TextView>
+
+
+            <RadioGroup
+                android:id="@+id/PgGroup"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/et_Pf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:fontFamily="@font/nanumbarunpenb"
+                    android:text="수컷">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/et_Pm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nanumbarunpenb"
+                    android:text="암컷">
+                </RadioButton>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_pregister"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/nanumbarunpenb"
+                android:backgroundTint="@color/black"
+                android:text="입력완료"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
